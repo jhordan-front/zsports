@@ -58,6 +58,7 @@ h6{
 p{
 	font-size: 20px;
 	font-weight: 400;
+	color: #fff;
 }
 .contenedor{
 	width: 1110px;
@@ -69,12 +70,13 @@ p{
 	border: 1px solid #25B941;
 	border-radius: 25px;
 	background-color: transparent;
-	transition: all 1s;
 	color: #ffffff;
 	padding: 17px 40px;
+	width: max-content;
 	&:hover{
 		background-color: #ffffff;
 		color: #25B941;
+		transition: all 1s;
 	}
 }
 
@@ -417,3 +419,119 @@ section.nuestros-servicios{
     	}
     }
 }
+/*ESTILOS DE PAGINA CASO*/
+section.slider-caso{
+	background-image: url(../img/fondo-caso.png);
+    height: 100vh;
+    background-size: cover;
+	.swiper-container{
+		background-color: rgba(0,0,0,0.65);
+		.swiper-wrapper{
+			.swiper-slide{
+				.contenedor{
+					h3{
+					font-size: 50px;
+					color: #fff;
+					max-width: 600px;
+					margin: 0 auto;
+					margin-bottom: 30px;
+					}
+				}
+	    	}
+	    }
+	    .swiper-button-next{
+		    right: 70px;
+		}
+		.swiper-button-prev {
+		    left: 70px;
+		}
+	}
+}	
+section.clientes-logos{
+	background: black;
+	min-height: 540px;
+	padding-bottom: 135px;
+	h2{
+		margin-top: 0;
+		padding-top: 90px;
+	}
+	ul{
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+		li{
+			width: 160px;
+   			padding: 0 20px;
+		}
+	}
+}
+section.caso-interna{
+	background-image: url(../img/fondo-exito.png);
+	background-size: cover;
+	.contenedor{
+		display: flex;
+		height: 100vh;
+		.col.izq{
+			max-width: 568px;
+		    text-align: left;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+			h3{
+				color: #25BB42;
+				margin-bottom: 10px;
+			}
+			h2{
+				color: #25BB42;
+				margin-bottom: 20px;
+				&:after{
+					content: '';
+					display: none;
+				}
+			}
+			p{
+				color: #ffff;
+				line-height: 28px;
+				&.ultimoparrafo{
+					margin-bottom: 47px;
+				}
+			}
+			a{
+				margin-top: 47px;
+
+			}
+		}
+	}
+}
+section.nuestro-objetivo{
+	padding-bottom: 70px;
+	.contenedor{
+		h2{
+			margin-top: 0;
+		}
+		.img-caso{
+			.col.center{
+
+				p{
+					font-size: 16px;
+					margin-bottom: 40px;
+				}
+			}
+		}
+		.row{
+			margin-top: 110px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.col{
+				width: 50%;
+				&.izq{
+					float: left;
+					max-width: 300px;
+
+				}
+			}
+		}
+	}
+}	   
+		    

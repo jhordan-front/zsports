@@ -52,6 +52,7 @@ h3 {
 p {
   font-size: 20px;
   font-weight: 400;
+  color: #fff;
 }
 
 .contenedor {
@@ -65,13 +66,14 @@ p {
   border: 1px solid #25B941;
   border-radius: 25px;
   background-color: transparent;
-  transition: all 1s;
   color: #ffffff;
   padding: 17px 40px;
+  width: max-content;
 }
 .button-sport:hover {
   background-color: #ffffff;
   color: #25B941;
+  transition: all 1s;
 }
 
 header {
@@ -388,4 +390,108 @@ section.nuestros-servicios .contenedor .row .servicios a span {
 }
 .icon-flotante li img .path {
   color: white;
+}
+
+/*ESTILOS DE PAGINA CASO*/
+section.slider-caso {
+  background-image: url(../img/fondo-caso.png);
+  height: 100vh;
+  background-size: cover;
+}
+section.slider-caso .swiper-container {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+section.slider-caso .swiper-container .swiper-wrapper .swiper-slide .contenedor h3 {
+  font-size: 50px;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+section.slider-caso .swiper-container .swiper-button-next {
+  right: 70px;
+}
+section.slider-caso .swiper-container .swiper-button-prev {
+  left: 70px;
+}
+
+section.clientes-logos {
+  background: black;
+  min-height: 540px;
+  padding-bottom: 135px;
+}
+section.clientes-logos h2 {
+  margin-top: 0;
+  padding-top: 90px;
+}
+section.clientes-logos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.clientes-logos ul li {
+  width: 160px;
+  padding: 0 20px;
+}
+
+section.caso-interna {
+  background-image: url(../img/fondo-exito.png);
+  background-size: cover;
+}
+section.caso-interna .contenedor {
+  display: flex;
+  height: 100vh;
+}
+section.caso-interna .contenedor .col.izq {
+  max-width: 568px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.caso-interna .contenedor .col.izq h3 {
+  color: #25BB42;
+  margin-bottom: 10px;
+}
+section.caso-interna .contenedor .col.izq h2 {
+  color: #25BB42;
+  margin-bottom: 20px;
+}
+section.caso-interna .contenedor .col.izq h2:after {
+  content: "";
+  display: none;
+}
+section.caso-interna .contenedor .col.izq p {
+  color: #ffff;
+  line-height: 28px;
+}
+section.caso-interna .contenedor .col.izq p.ultimoparrafo {
+  margin-bottom: 47px;
+}
+section.caso-interna .contenedor .col.izq a {
+  margin-top: 47px;
+}
+
+section.nuestro-objetivo {
+  padding-bottom: 70px;
+}
+section.nuestro-objetivo .contenedor h2 {
+  margin-top: 0;
+}
+section.nuestro-objetivo .contenedor .img-caso .col.center p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+section.nuestro-objetivo .contenedor .row {
+  margin-top: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.nuestro-objetivo .contenedor .row .col {
+  width: 50%;
+}
+section.nuestro-objetivo .contenedor .row .col.izq {
+  float: left;
+  max-width: 300px;
 }

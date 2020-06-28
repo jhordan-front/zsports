@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+	<header>
+		<div class="contenedor">
+			<div class="header-logo">
+				<a href="">
+					<img src="img/logo-header.png" alt="">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<a href=""><li class="active-nav">Inicio</li></a>
+					<a href="quienes-somos.html"><li class="">Nosotros</li></a>
+					<a href=""><li class="">Servicios +</li></a>
+					<a href=""><li class="">Casos de exito</li></a>
+					<a href=""><li class="">Blog</li></a>
+					<a href=""><li class="">Contacto</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="slider-caso">
+
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		    	<div class="swiper-slide caso1">
+		      		<div class="contenedor">
+		      			<h3>Construyendo marcas a través del deporte</h3>
+		      			<a class="button-sport" href="caso-interna.html">
+		      				Ver Caso
+		      			</a>
+		      						      	
+		      		</div>
+		      	</div>
+		      	<div class="swiper-slide caso1">
+		      		<div class="contenedor">
+		      			<h3>Construyendo marcas a través del deporte</h3>
+		      			<a class="button-sport" href="caso-interna.html">
+		      				Ver Caso
+		      			</a>
+		      						      	
+		      		</div>
+		      	</div>	 
+		      	<div class="swiper-slide caso1">
+		      		<div class="contenedor">
+		      			<h3>Construyendo marcas a través del deporte</h3>
+		      			<a class="button-sport" href="caso-interna.html">
+		      				Ver Caso
+		      			</a>
+		      						      	
+		      		</div>
+		      	</div>	 	   	
+		    </div>
+
+		    <!-- Add Arrows -->
+		    <div class="swiper-button-next"></div>
+		    <div class="swiper-button-prev"></div>
+		    <script src="js/swiper.min.js"></script>
+
+	  	<!-- Initialize Swiper -->
+		  	<script>
+			    var swiper = new Swiper('.swiper-container', {
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+		  	</script>
+		</div>
+	</section>
+	<section class="clientes-logos">
+		<div class="contenedor">
+			<h2 class="subtitulo">Misión y Visión</h2>
+			<ul>
+				<li>
+					<img src="img/cliente1.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente2.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente3.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente4.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente5.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente6.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente7.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente8.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente9.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente10.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente11.png" alt="">
+				</li>
+				<li>
+					<img src="img/cliente12.png" alt="">
+				</li>
+			</ul>
+		</div>
+	</section>
+	<div class="icon-flotante">
+		<ul>
+			<li>
+				<img src="img/facebook-icon.svg" alt="">
+			</li>
+			<li>
+				<img src="img/youtube-icon.svg" alt="">
+			</li>
+			<li>
+				<img src="img/linkedin-icon.svg" alt="">
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body style="background-color: #000">
+	<header>
+		<div class="contenedor">
+			<div class="header-logo">
+				<a href="">
+					<img src="img/logo-header.png" alt="">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<a href=""><li class="active-nav">Inicio</li></a>
+					<a href=""><li class="">Nosotros</li></a>
+					<a href=""><li class="">Servicios +</li></a>
+					<a href=""><li class="">Casos de exito</li></a>
+					<a href=""><li class="">Blog</li></a>
+					<a href=""><li class="">Contacto</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="quienes-somos">
+		<div class="contenedor">
+			<div class="col izq">
+				<h3>Zsports</h3>
+				<h2>Zsports</h2>
+				<p class="ultimoparrafo">Agencia de marketing líder en el Perú, con presencia en LATAM vía socios locales.</p>
+				<a class="button-sport" href="">
+					Contáctanos
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="mis-vis">
+		<div class="contenedor">
+			<h2 class="subtitulo">Misión y Visión</h2>
+			<p>Manifiesto mediante nuestro variado portafolio de propiedades deportivas y servicios personalizados en Patrocinio Deportivo, Organización de Eventos y Merchandising`</p>
+		</div>
+	</section>
+	<section class="team-sport">
+		<div class="contenedor">
+			<h2 class="subtitulo">Team Zsports</h2>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/team1.png" alt="">
+						<h4 class="nombre-team">SEBASTIÁN RUBIO</h4>
+						<p class="cargo-team">DIRECTOR Y FUNDADOR ZSPORTS</p>
+						<div class="rrss-slider">
+							<ul>
+								<a href="">
+									<li>
+										<img src="img/linkedin-icon.svg" alt="">
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div> 	
+					<div class="swiper-slide">
+						<img src="img/team1.png" alt="">
+						<h4 class="nombre-team">SEBASTIÁN RUBIO</h4>
+						<p class="cargo-team">DIRECTOR Y FUNDADOR ZSPORTS</p>
+						<div class="rrss-slider">
+							<ul>
+								<a href="">
+									<li>
+										<img src="img/linkedin-icon.svg" alt="">
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div> 
+					<div class="swiper-slide">
+						<img src="img/team1.png" alt="">
+						<h4 class="nombre-team">SEBASTIÁN RUBIO</h4>
+						<p class="cargo-team">DIRECTOR Y FUNDADOR ZSPORTS</p>
+						<div class="rrss-slider">
+							<ul>
+								<a href="">
+									<li>
+										<img src="img/linkedin-icon.svg" alt="">
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div> 
+					<div class="swiper-slide">
+						<img src="img/team1.png" alt="">
+						<h4 class="nombre-team">SEBASTIÁN RUBIO</h4>
+						<p class="cargo-team">DIRECTOR Y FUNDADOR ZSPORTS</p>
+						<div class="rrss-slider">
+							<ul>
+								<a href="">
+									<li>
+										<img src="img/linkedin-icon.svg" alt="">
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div> 
+				</div>
+				<!-- Add Arrows -->
+				
+			</div>
+			<script src="js/swiper.min.js"></script>
+
+			<!-- Initialize Swiper -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 4,
+					spaceBetween: 30,
+					slidesPerGroup: 2,
+					loop: true,
+					loopFillGroupWithBlank: true,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			</script>
+		</div>
+	</section>
+	<section class="trabajacon-nosotros">
+
+		<div class="contenedor">
+			<h2 class="subtitulo">Trabaja con Nosotros</h2>
+			<div class="row">
+				<div class="col izq">
+					<h4>Edificio Empresarial SOHO+</h4>
+					<p>Tomas Ramsey 930,Of.209,Magdalena</p>
+					<div class="items-rrss">
+						<div class="rrss-izq">
+							<ul>
+								<a href="">
+									<li>
+										<img src="img/casa.svg" alt="">
+										<p>(+511) 379 2036 | (+51) 944 660 574</p>
+									</li>
+								</a>
+								<a href="">
+									<li>
+										<img src="img/web.svg" alt="">
+										<p>www.zsports.com.pe</p>
+									</li>
+								</a>
+								<a href="">
+									<li>
+										<img src="img/mensaje.svg" alt="">
+										<p>info@zsports.com.pe</p>
+									</li>
+								</a>
+							</ul>
+						</div>
+						<div class="rrss-der">
+							<ul>
+								<a href="">
+									<li>
+										<img src="img/facebook-icon.svg" alt="">
+										<p>/ZSports Perú</p>
+									</li>
+								</a>
+								<a href="">
+									<li>
+										<img src="img/youtube-icon.svg" alt="">
+										<p>/ZSports Perú</p>
+									</li>
+								</a>
+								<a href="">
+									<li>
+										<img src="img/linkedin-icon.svg" alt="">
+										<p>/ZSports Perú</p>
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col der">
+					<form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+						<div>
+							<label for="fname">Nombre</label><br>
+							<input type="text" id="fname" name="fname"><br>
+						</div>
+						<div class="flex-form">
+							<div class="izq-form">
+								<label for="mail">Email</label>
+								<input type="mail" id="mail" name="mail">
+							</div>
+							<div class="der-form">
+								<label for="telefono">Telefono</label>
+								<input type="text" id="telefono" name="telefono">
+							</div>
+						</div>
+						<div class="adjunto-cv">
+							<label for="archivo-adjunto">Adjuntar CV</label>
+							<input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+							<img src="img/icon-archivo.svg" alt="">
+						</div>
+						<div></div>
+					    <!-- ¡No olvides el enctype! -->
+						<label for="mensaje">Mensaje</label><br>
+						<textarea name="Mensaje" id="" cols="30" rows="2"></textarea>
+					    <!-- Campo de selección de archivo -->
+					 	
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="nuestros-servicios">
+		<div class="contenedor">
+			<h2 class="subtitulo">Trabaja con Nosotros</h2>
+			<div class="row">
+				<div class="servicios">
+					<img src="img/servicio1.png" alt="">
+					<h4>Academies</h4>
+					<a href=""><span class="arrow-icon"></span>Ver Servicio</a>
+				</div>
+				<div class="servicios">
+					<img src="img/servicio2.png" alt="">
+					<h4>Retail</h4>
+					<a href=""><span class="arrow-icon"></span>Ver Servicio</a>
+				</div>
+				<div class="servicios">
+					<img src="img/servicio3.png" alt="">
+					<h4>Sponsorship</h4>
+					<a href=""><span class="arrow-icon"></span>Ver Servicio</a>
+				</div>
+				<div class="servicios">
+					<img src="img/servicio4.png" alt="">
+					<h4>Lab</h4>
+					<a href=""><span class="arrow-icon"></span>Ver Servicio</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="icon-flotante">
+		<ul>
+			<li>
+				<img src="img/facebook-icon.svg" alt="">
+			</li>
+			<li>
+				<img src="img/youtube-icon.svg" alt="">
+			</li>
+			<li>
+				<img src="img/linkedin-icon.svg" alt="">
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

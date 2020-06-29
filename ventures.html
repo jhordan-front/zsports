@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ventures</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body style="background: black">
+
+	<header>
+		<div class="contenedor">
+			<div class="header-logo">
+				<a href="">
+					<img src="img/logo-header.png" alt="">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<a href=""><li class="active-nav">Inicio</li></a>
+					<a href="quienes-somos.html"><li class="">Nosotros</li></a>
+					<a href=""><li class="">Servicios +</li></a>
+					<a href=""><li class="">Casos de exito</li></a>
+					<a href=""><li class="">Blog</li></a>
+					<a href=""><li class="">Contacto</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="noticias">
+		<div class="contenedor">
+			<h1>La red de networking deportivo más grande de latinoamerica</h1>
+			<a class="button-sport" href="caso-interna.html">
+		     proximos eventos</a>
+		</div>
+	</section>
+	<section class="prox-noticias">
+		<div class="contenedor">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			    	<div class="swiper-slide">
+			         	<a href="evento-post.html">
+			         		<img src="img/serv1.png" alt="">
+				         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+				         	<a href=""><span class="arrow-icon"></span>Participar</a>
+				         	<div class="absolute-fecha">
+				         		<div class="mes"><p>nov</p></div>	
+				         		<div class="year"><p>2020</p></div>	
+				         	</div>
+			         	</a>
+			      	</div>	
+			      	<div class="swiper-slide">
+			         	<a href="evento-post.html">
+			         		<img src="img/serv2.png" alt="">
+			         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+			         	<a href=""><span class="arrow-icon"></span>Participar</a>
+			         	<div class="absolute-fecha">
+			         		<div class="mes"><p>nov</p></div>	
+			         		<div class="year"><p>2020</p></div>	
+			         	</div>
+			         	</a>
+			      	</div>	
+			      	<div class="swiper-slide">
+			         	<a href="evento-post.html">
+			         		<img src="img/serv3.png" alt="">
+				         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+				         	<a href=""><span class="arrow-icon"></span>Participar</a>
+				         	<div class="absolute-fecha">
+				         		<div class="mes"><p>nov</p></div>	
+				         		<div class="year"><p>2020</p></div>	
+				         	</div>
+			         	</a>
+			      	</div>	 	   	
+			    </div>
+
+			    <!-- Add Arrows -->
+			    <script src="js/swiper.min.js"></script>
+
+		  	<!-- Initialize Swiper -->
+			  	<script>
+					var swiper = new Swiper('.swiper-container', {
+						slidesPerView: 3,
+						spaceBetween: 30,
+						slidesPerGroup: 1,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+				</script>
+			</div>
+		</div>
+	</section>
+	<section class="eventos-pasados">
+		<div class="contenedor">
+			<h2>
+				Eventos Pasados
+			</h2>
+			<div class="swiper-container pasado">
+			    <div class="swiper-wrapper">
+			    	<div class="swiper-slide">
+			         	<img src="img/noticia1.png" alt="">
+			         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+			         	<a href=""><span class="arrow-icon"></span>Ver eventos</a>
+			         	<div class="absolute-fecha">
+			         		<div class="mes"><p>nov</p></div>	
+			         		<div class="year"><p>2020</p></div>	
+			         	</div>
+			      	</div>	
+			      	<div class="swiper-slide">
+			         	<img src="img/noticia2.png" alt="">
+			         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+			         	<a href=""><span class="arrow-icon"></span>Ver eventos</a>
+			         	<div class="absolute-fecha">
+			         		<div class="mes"><p>nov</p></div>	
+			         		<div class="year"><p>2020</p></div>	
+			         	</div>
+			      	</div>	
+			      	<div class="swiper-slide">
+			         	<img src="img/noticia3.png" alt="">
+			         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+			         	<a href=""><span class="arrow-icon"></span>Ver eventos</a>
+			         	<div class="absolute-fecha">
+			         		<div class="mes"><p>nov</p></div>	
+			         		<div class="year"><p>2020</p></div>	
+			         	</div>
+			      	</div>	 
+			      	<div class="swiper-slide">
+			         	<img src="img/noticia4.png" alt="">
+			         	<h3 class="titulonoticia">WEBINAR SERIES: CÓMO MANTENER LA PASIÓN DE MILLONES SI EL BALÓN NO RUEDA. ATLÉTICO NACIONAL.</h3>
+			         	<a href=""><span class="arrow-icon"></span>Ver eventos</a>
+			         	<div class="absolute-fecha">
+			         		<div class="mes"><p>nov</p></div>	
+			         		<div class="year"><p>2020</p></div>	
+			         	</div>
+			      	</div>		   	
+			    </div>
+
+			    <!-- Add Arrows -->
+			    <script src="js/swiper.min.js"></script>
+
+		  	<!-- Initialize Swiper -->
+			  	<script>
+					var swiper = new Swiper('.swiper-container.pasado', {
+						slidesPerView: 4,
+						spaceBetween: 30,
+						slidesPerGroup: 1,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+				</script>
+			</div>
+		</div>
+	</section>
+	<section class="informacion">
+		<div class="contenedor">
+			<div class="row">
+				<div class="col izq">
+					<h3>¿Quieres más información de nuestros eventos?</h3>
+				</div>
+				<div class="col der">
+					<form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+						<div>
+							<label for="fname">Nombre</label><br>
+							<input type="text" id="fname" name="fname"><br>
+						</div>
+						<div class="flex-form">
+							<div class="izq-form">
+								<label for="mail">Email</label>
+								<input type="mail" id="mail" name="mail">
+							</div>
+							<div class="der-form">
+								<label for="telefono">Telefono</label>
+								<input type="text" id="telefono" name="telefono">
+							</div>
+						</div>
+						<div></div>
+					    <!-- ¡No olvides el enctype! -->
+						<label for="mensaje">Mensaje</label><br>
+						<textarea name="Mensaje" id="" cols="30" rows="2"></textarea>
+					    <!-- Campo de selección de archivo -->
+					 	<a class="button-sport" href="caso-interna.html">
+		    			Enviar</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<div class="icon-flotante">
+		<ul>
+			<li>
+				<img src="img/facebook-icon.svg" alt="">
+			</li>
+			<li>
+				<img src="img/youtube-icon.svg" alt="">
+			</li>
+			<li>
+				<img src="img/linkedin-icon.svg" alt="">
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

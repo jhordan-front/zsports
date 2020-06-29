@@ -16,6 +16,14 @@ ul, li {
   list-style: none;
 }
 
+.green {
+  color: #25BB42;
+}
+
+.back-green {
+  background-color: #25BB42;
+}
+
 a {
   text-decoration: unset;
   color: unset;
@@ -34,7 +42,7 @@ h2.subtitulo {
   position: relative;
   padding-bottom: 40px;
 }
-h2:after {
+h2.subtitulo:after {
   content: "";
   width: 2px;
   height: 30px;
@@ -42,6 +50,10 @@ h2:after {
   left: 0;
   bottom: 0;
   background: #25BB42;
+}
+
+.titulo-frame {
+  color: #25BB42;
 }
 
 h3 {
@@ -494,4 +506,503 @@ section.nuestro-objetivo .contenedor .row .col {
 section.nuestro-objetivo .contenedor .row .col.izq {
   float: left;
   max-width: 300px;
+}
+
+section.back-serv-sponsorship {
+  background-position-y: 55%;
+  height: 100vh;
+  background-image: url(../img/serv-sponsorship.png);
+  background-size: cover;
+}
+section.back-serv-sponsorship .contenedor {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+section.back-serv-sponsorship .contenedor .col.izq {
+  width: 50%;
+}
+section.back-serv-sponsorship .contenedor .col.izq p {
+  line-height: 28px;
+  font-weight: 400;
+}
+
+section.tabs-servicio .tabs-item {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+section.tabs-servicio .tabs-item .tab-propiedad, section.tabs-servicio .tabs-item .tab-marca {
+  width: 240px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px 15px;
+  position: relative;
+}
+section.tabs-servicio .tabs-item .tab-propiedad p, section.tabs-servicio .tabs-item .tab-marca p {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+section.tabs-servicio .tabs-item .tab-propiedad.activo, section.tabs-servicio .tabs-item .tab-marca.activo {
+  background-color: #25BB42;
+}
+section.tabs-servicio .tabs-item .tab-propiedad.activo:after, section.tabs-servicio .tabs-item .tab-marca.activo:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #25BB42;
+  position: absolute;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+section.tabs-servicio .contenedor {
+  padding-bottom: 70px;
+}
+section.tabs-servicio .contenedor article {
+  display: none;
+}
+section.tabs-servicio .contenedor article ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.tabs-servicio .contenedor article ul li {
+  width: 31%;
+  margin-bottom: 20px;
+}
+section.tabs-servicio .contenedor article ul li h6.tab-titulo {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 20px 0;
+}
+section.tabs-servicio .contenedor article.active-tab {
+  display: block;
+}
+
+/*VENTURES ESTILOS*/
+section.noticias {
+  background-image: url(../img/fondo-noticia.png);
+  background-size: cover;
+}
+section.noticias .contenedor {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.noticias .contenedor h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 830px;
+  margin-top: 280px;
+  margin-bottom: 20px;
+}
+section.noticias .contenedor a {
+  text-transform: uppercase;
+}
+
+section.prox-noticias {
+  position: relative;
+  top: -50px;
+}
+
+section.eventos-pasados, section.prox-noticias {
+  padding-bottom: 140px;
+}
+section.eventos-pasados h2, section.prox-noticias h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #25BB42;
+  margin-bottom: 40px;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide, section.prox-noticias .contenedor .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide a h3, section.prox-noticias .contenedor .swiper-container .swiper-wrapper .swiper-slide a h3 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  margin: 20px 0;
+  line-height: 26px;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide a a, section.prox-noticias .contenedor .swiper-container .swiper-wrapper .swiper-slide a a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: underline;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide a a span, section.prox-noticias .contenedor .swiper-container .swiper-wrapper .swiper-slide a a span {
+  width: 13px;
+  height: 14px;
+  border: 2px solid;
+  transform: rotate(45deg);
+  display: block;
+  left: -8px;
+  position: relative;
+}
+
+section.eventos-pasados {
+  padding-bottom: 140px;
+}
+section.eventos-pasados h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #25BB42;
+  margin-bottom: 40px;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide h3 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  margin: 20px 0;
+  line-height: 26px;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: underline;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
+section.eventos-pasados .contenedor .swiper-container .swiper-wrapper .swiper-slide a span {
+  width: 13px;
+  height: 14px;
+  border: 2px solid;
+  transform: rotate(45deg);
+  display: block;
+  left: -8px;
+  position: relative;
+}
+
+.absolute-fecha {
+  width: 49px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+.absolute-fecha .mes {
+  background: #25BB42;
+}
+.absolute-fecha .mes p {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+.absolute-fecha .year {
+  background: white;
+}
+.absolute-fecha .year p {
+  font-size: 13px;
+  color: black;
+}
+
+section.informacion {
+  padding-bottom: 130px;
+}
+section.informacion .contenedor .row {
+  display: flex;
+  align-items: center;
+}
+section.informacion .contenedor .row .col.izq {
+  width: 50%;
+  float: left;
+}
+section.informacion .contenedor .row .col.izq h2 {
+  color: #25BB42;
+  font-size: 50px;
+  line-height: 60px;
+  max-width: 490px;
+}
+section.informacion .contenedor .row .col.der {
+  width: 50%;
+}
+section.informacion .contenedor .row .col.der form {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+section.informacion .contenedor .row .col.der form input#fname, section.informacion .contenedor .row .col.der form input#mail, section.informacion .contenedor .row .col.der form input#telefono, section.informacion .contenedor .row .col.der form textarea {
+  width: 100%;
+  background: transparent;
+  border: unset;
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+section.informacion .contenedor .row .col.der form div {
+  margin-bottom: 40px;
+}
+section.informacion .contenedor .row .col.der form .adjunto-cv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+section.informacion .contenedor .row .col.der form .adjunto-cv img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section.informacion .contenedor .row .col.der form a.button-sport {
+  float: right;
+  position: relative;
+  margin-top: 30px;
+}
+
+/*ESTILOS DEL POST DE EVENTO*/
+section.evento-programado {
+  background-image: url(../img/fondo-evento.png);
+  background-size: cover;
+}
+section.evento-programado .contenedor {
+  height: 100vh;
+}
+section.evento-programado .contenedor .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 180px;
+}
+section.evento-programado .contenedor .row .col.izq {
+  width: 50%;
+  float: left;
+  max-width: 535px;
+  display: flex;
+  flex-direction: column;
+}
+section.evento-programado .contenedor .row .col.izq h1 {
+  font-size: 44px;
+  padding: 17px;
+  color: #fff;
+  text-transform: uppercase;
+}
+section.evento-programado .contenedor .row .col.izq h2 {
+  color: white;
+  font-size: 36px;
+  line-height: 43px;
+  padding-left: 17px;
+  margin: 15px 0;
+}
+section.evento-programado .contenedor .row .col.izq p {
+  font-size: 18px;
+  line-height: 36px;
+  padding-left: 17px;
+}
+section.evento-programado .contenedor .row .col.der {
+  width: 50%;
+}
+section.evento-programado .contenedor .row .col.der .fecha-programa {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  width: 310px;
+  position: relative;
+  float: right;
+  height: 106px;
+  align-items: center;
+  top: -37px;
+}
+section.evento-programado .contenedor .row .col.der .fecha-programa h2 {
+  font-weight: 600;
+}
+section.evento-programado .contenedor .boton-center {
+  margin: 0 auto;
+  width: max-content;
+  margin-top: 58px;
+}
+
+section.clientes-apoyo .contenedor .item-apoyo.back-green {
+  max-width: 540px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+section.clientes-apoyo .contenedor .item-apoyo.back-green h2 {
+  color: white;
+  font-size: 15px;
+  padding-left: 19px;
+}
+section.clientes-apoyo .contenedor .item-apoyo.back-green img {
+  width: 27%;
+  padding: 25px;
+}
+
+section.integra-profesionales .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.integra-profesionales .row .profesionales-item {
+  width: 30%;
+  margin-bottom: 50px;
+}
+section.integra-profesionales .row .profesionales-item img {
+  width: 25%;
+  margin: auto;
+  display: block;
+}
+section.integra-profesionales .row .profesionales-item h5 {
+  font-size: 16px;
+  color: #fff;
+  line-height: 23px;
+  text-align: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+section.speakers .contenedor .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.speakers .contenedor .row .profesionales-speakers {
+  width: 22%;
+}
+section.speakers .contenedor .row .profesionales-speakers h4 {
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+section.speakers .contenedor .row .profesionales-speakers p {
+  text-align: left;
+  font-size: 16px;
+  opacity: 0.7;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.speakers .contenedor .row .profesionales-speakers .rrss-slider ul {
+  display: flex;
+}
+section.speakers .contenedor .row .profesionales-speakers .rrss-slider ul li {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section.agenda .contenedor .col.center ul li {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+section.agenda .contenedor .col.center ul li .hora-agenda {
+  display: flex;
+  width: 35%;
+}
+section.agenda .contenedor .col.center ul li .hora-agenda p {
+  color: #25BB42;
+}
+section.agenda .contenedor .col.center ul li .hora-agenda span {
+  color: #25BB42;
+  margin: 0 15px;
+}
+section.agenda .contenedor .col.center ul li .tema-agenda {
+  width: 65%;
+}
+
+section.sponsor .contenedor .col.center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.sponsor .contenedor .col.center img {
+  width: 25%;
+  padding: 70px;
+}
+
+section.precios-evento {
+  padding-bottom: 50px;
+}
+section.precios-evento .contenedor .col.center {
+  display: flex;
+  justify-content: space-around;
+}
+section.precios-evento .contenedor .col.center .precios {
+  width: 200px;
+}
+section.precios-evento .contenedor .col.center .precios h3 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+section.precios-evento .contenedor .col.center .precios h4 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+section.cupos-evento .row {
+  display: flex;
+}
+section.cupos-evento .row .col.izq {
+  width: 50%;
+  float: left;
+}
+section.cupos-evento .row .col.izq h2 {
+  margin: 0;
+}
+section.cupos-evento .row .col.der {
+  width: 50%;
+}
+section.cupos-evento .row .col.der form {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+section.cupos-evento .row .col.der form input#fname, section.cupos-evento .row .col.der form input#mail, section.cupos-evento .row .col.der form input#telefono, section.cupos-evento .row .col.der form textarea {
+  width: 100%;
+  background: transparent;
+  border: unset;
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+section.cupos-evento .row .col.der form div {
+  margin-bottom: 40px;
+}
+section.cupos-evento .row .col.der form .adjunto-cv {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+section.cupos-evento .row .col.der form .adjunto-cv img {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section.cupos-evento .row .col.der form a.button-sport {
+  float: right;
+  position: relative;
+  margin-top: 30px;
 }
